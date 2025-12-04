@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { FaCode, FaUser, FaBriefcase, FaLaptopCode, FaClock, FaSearch, FaUsers, FaPlus } from 'react-icons/fa';
 import DeveloperForm from './DeveloperForm';
 
-const base_url = "http://localhost:7002";
+const base_url = "https://create-a-developer-directory-app.onrender.com";
 
 const DeveloperList = () => {
     const [developers, setDevelopers] = useState([]);
@@ -252,5 +252,6 @@ const DeveloperList = () => {
         </div>
     );
 };
+
 
 export default DeveloperList;
