@@ -3,6 +3,8 @@
 Simple full-stack Developer Directory.
 demo link : https://create-a-developer-directory-app.onrender.com/
 
+![Login](image.png)
+
 ## Features
 - Add developer: name, role (Frontend/Backend/Full-Stack), tech stack (comma-separated), experience (years)
 - List developers in a clean UI
