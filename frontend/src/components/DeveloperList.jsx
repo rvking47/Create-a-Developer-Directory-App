@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import DeveloperEdit from './DeveloperEdit';
 import DeveloperProfile from './DeveloperProfile';
 
-const base_url = "https://create-a-developer-directory-app.onrender.com";
+const base_url = "https://create-a-developer-directory-app-backend.onrender.com";
 
 const DeveloperList = () => {
     const [developers, setDevelopers] = useState([]);
@@ -482,3 +482,4 @@ const DeveloperList = () => {
 
 
 export default DeveloperList;
+
