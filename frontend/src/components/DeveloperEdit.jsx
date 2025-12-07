@@ -5,7 +5,7 @@ import { FaTimes, FaUser, FaPaperPlane } from 'react-icons/fa';
 import { FaBriefcase, FaCode, FaClock } from 'react-icons/fa'
 import { FaCalendar, FaFileAlt, FaImage } from 'react-icons/fa'
 
-const base_url = "http://localhost:7002";
+const base_url = "https://create-a-developer-directory-app-backend.onrender.com";
 
 function DeveloperEdit({ onClose, id, name, role, techStack, experience, joiningDate, pfile, viewRole, description, setName, setRole, setTechStack, setExperince, setJoiningDate, setDescription, handleView }) {
     const [validationName, setValidationName] = useState("");
@@ -334,5 +334,6 @@ function DeveloperEdit({ onClose, id, name, role, techStack, experience, joining
         </div>
     );
 }
+
 
 export default DeveloperEdit;
