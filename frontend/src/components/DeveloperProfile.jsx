@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { FaTimes, FaUser, FaBriefcase, FaCode, FaClock, FaCalendar, FaFileAlt} from 'react-icons/fa';
 
-const base_url = "http://localhost:7002";
+const base_url = "https://create-a-developer-directory-app-backend.onrender.com";
 
 function DeveloperProfile({ developer, onClose }) {
     if (!developer) return null;
@@ -145,5 +145,6 @@ function DeveloperProfile({ developer, onClose }) {
         </div>
     );
 }
+
 
 export default DeveloperProfile;
