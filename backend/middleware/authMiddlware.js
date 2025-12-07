@@ -10,7 +10,7 @@ const authMiddlware = async (req, res, next) => {
         return res.status(402).json({ message: "Token Error!!" });
     }
     try {
-        const decoded = jwt.verify(token, process.env.API_KEY);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
         req.user = decoded;
         next();
     }
@@ -19,3 +19,4 @@ const authMiddlware = async (req, res, next) => {
     }
 }
 export default authMiddlware;
+
