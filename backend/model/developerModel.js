@@ -16,6 +16,18 @@ const developerSchema = new mongoose.Schema({
     experience: {
         type: Number,
         required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    joiningDate: {
+        type: Date,
+        required: true
+    },
+    profileImg: {
+        type: String,
+        required: true
     }
 });
 
