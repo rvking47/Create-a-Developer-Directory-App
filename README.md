@@ -1,7 +1,7 @@
 # Developer Directory App
 
-Frontend demo link : https://create-a-developer-directory-app-ba.vercel.app
-Backend demo link : https://create-a-developer-directory-app-backend.onrender.com
+- Frontend demo link : https://create-a-developer-directory-app-ba.vercel.app
+- Backend demo link : https://create-a-developer-directory-app-backend.onrender.com
 
 ![image](image.png)
 
