@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import ConnectDB from "./database/db.js";
 import cors from "cors";
 import router from "./routes/developerRoute.js";
-import path from "path";
-import { fileURLToPath } from "url";
+//import path from "path";
+//import { fileURLToPath } from "url";
 import authRoute from "./routes/authRoute.js";
 import { v2 as cloudinary } from "cloudinary";
 
@@ -23,14 +23,18 @@ cloudinary.config({
 })
 
 //deployment
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
+//app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-app.get(/^\/(?!api).*/, (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
-});
+//app.get(/^\/(?!api).*/, (req, res) => {
+  //  res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
+//});
+
+app.get("/", (req, res) => {
+    res.send("Backend server is running..");
+})
 
 app.use("/api", router);
 app.use("/api/auth", authRoute);
