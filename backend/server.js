@@ -14,7 +14,10 @@ const app = express();
 const PORT = process.env.PORT || 7002;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ["https://create-a-developer-directory-app-ba.vercel.app"],
+  credentials: true
+}));
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -42,3 +45,4 @@ app.use("/api/auth", authRoute);
 app.listen(PORT, () => {
     console.log(`Server is running http://localhost:${PORT}`)
 });
+
