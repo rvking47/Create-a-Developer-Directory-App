@@ -34,7 +34,7 @@ const logIn = async (req, res) => {
         if (!exitsPassword) {
             return res.status(402).json({ message: "Email and Password wrong!!" })
         }
-        const jwToken = jwt.sign({ _id: exitsUser._id, email: exitsUser.email }, process.env.API_Key, {
+        const jwToken = jwt.sign({ _id: exitsUser._id, email: exitsUser.email }, process.env.JWT_SECRET, {
             expiresIn: "8h"
         });
         res.status(200).json({ message: "User Login SuccessFully!!", token: jwToken, user: { _id: exitsUser._id, name: exitsUser.name, email: exitsUser.email } });
@@ -43,5 +43,6 @@ const logIn = async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 }
+
 
 export { signUp, logIn };
