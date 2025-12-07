@@ -5,7 +5,7 @@ import { FaUser, FaBriefcase, FaCode, FaClock, FaPaperPlane, FaTimes } from 'rea
 import { FaCalendar, FaFileAlt, FaImage } from 'react-icons/fa'
 import "../App.css"
 
-const base_url = "http://localhost:7002";
+const base_url = "https://create-a-developer-directory-app.onrender.com";
 
 const DeveloperForm = ({ isOpen, onClose, onDeveloperAdded, viewRole }) => {
     const [name, setName] = useState("");
@@ -350,5 +350,6 @@ const DeveloperForm = ({ isOpen, onClose, onDeveloperAdded, viewRole }) => {
         </>
     )
 }
+
 
 export default DeveloperForm;
