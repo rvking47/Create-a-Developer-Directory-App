@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaEnvelope, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
 import { MdLogin } from 'react-icons/md';
 
-const base_url = "http://localhost:7002";
+const base_url = "https://create-a-developer-directory-app-backend.onrender.com";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -165,5 +165,6 @@ const Login = () => {
         </div>
     );
 };
+
 
 export default Login;
